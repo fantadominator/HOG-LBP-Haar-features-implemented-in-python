@@ -1,9 +1,10 @@
 # HOG-LBP-Haar-features-implemented-in-python
 Using numpy to implement typical  features of Digital Image Processing, including HOG, LBP, Haar.
 
-1.
 
 For HOG features:
+==
+from HOG import HOG
 
 hog_descriptor = HOG(img,block_size=3)
 
@@ -11,10 +12,9 @@ hog_vector = hog_descriptor.hog_features()
 
 print(hog_vector.shape)
 
-
-2.
-
 For LBP features:
+==
+from LBP import LBP
 
 lbp = LBP(img)
 
@@ -26,10 +26,9 @@ vector = lbp.get_lbp_vector(features,8)
 
 print(vector.shape,vector[:10])
 
-
-3.
-
 For basic Haar features:
+==
+from Haar import Haar
 
 haar_features = Haar(img)
 
